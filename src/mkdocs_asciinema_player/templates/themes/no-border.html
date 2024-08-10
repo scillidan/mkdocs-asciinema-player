@@ -1,13 +1,13 @@
-<div class="mkap-window-noborder">
-    <div class="mkap-title-bar-no-border>
-        <div class="mkap-title-bar-text-no-border>{{ title | default("Terminal") }}</div>
-        <div class="mkap-title-bar-controls-noborder">
+<div class="mkap-window-no-border">
+    <div class="mkap-title-bar-no-border">
+        <div class="mkap-title-bar-text-no-border">{{ title | default("Terminal") }}</div>
+        <div class="mkap-title-bar-controls-no-border">
         <button aria-label="Minimize"></button>
         <button aria-label="Maximize"></button>
         <button aria-label="Close"></button>
         </div>
     </div>
-    <div class="mkap-window-body-no-border>
-        <div class="mkap-player-no-border id="{{ 'asciinema-player-' ~ match_id }}"></div>
+    <div class="mkap-window-body-no-border">
+        <div class="mkap-player-no-border" id="{{ 'asciinema-player-' ~ match_id }}"></div>
     </div>
 </div>
