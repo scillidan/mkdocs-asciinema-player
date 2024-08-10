@@ -147,3 +147,45 @@
 .mkap-player-blue .ap-wrapper .ap-player {
     border-radius: 0px;
 }
+
+/* No-Border theme */
+
+:root {
+    /* Tokyo Night Theme Color */
+    --text-color: #c0caf5; /* Light text color */
+    --surface: #1a1b26; /* Background color */
+    --button-highlight: #ffffff; /* Highlight color for buttons */
+    --button-face: #21222c; /* Button face color */
+    --button-shadow: #3b4252; /* Button shadow color */
+    --window-frame: #2e3440; /* Window frame color */
+    --dialog-no-border: #7fdbca; /* Dialog color without border */
+    --dialog-no-border-light: #88c0d0; /* Light dialog color without border */
+    --dialog-gray: #4c566a; /* Gray dialog color */
+    --dialog-gray-light: #d8dee9; /* Light gray dialog color */
+    --link-no-border: #81a1c1; /* Link color */
+
+    /* Borders */
+    --border-window-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-face);
+    --border-window-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-highlight);
+    --border-raised-outer: inset -1px -1px var(--window-frame), inset 1px 1px var(--button-highlight);
+    --border-raised-inner: inset -2px -2px var(--button-shadow), inset 2px 2px var(--button-face);
+}
+
+.mkap-window-no-border {
+    box-shadow: var(--border-window-outer), var(--border-window-inner);
+    background: var(--surface);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.mkap-title-bar-no-border {
+    display: none;
+}
+
+.mkap-window-body-no-border {
+    margin: 0px;
+}
+
+.mkap-player-no-border .ap-wrapper .ap-player {
+    border-radius: 0px;
+}
